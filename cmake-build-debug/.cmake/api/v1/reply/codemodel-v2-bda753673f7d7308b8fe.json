@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8695cc09510634bb98e2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "libakrypt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "akbase-shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-akbase-shared-Debug-9d7cfcc3db39f3693093.json",
+					"name" : "akbase-shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "akrypt-shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-akrypt-shared-Debug-62c197eab365c1cff780.json",
+					"name" : "akrypt-shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aktool::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aktool-Debug-634db02a4cea7de35290.json",
+					"name" : "aktool",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug",
+		"source" : "/home/shvarev/456/libakrypt-0.x-master"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

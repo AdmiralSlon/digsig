@@ -1,0 +1,107 @@
+/snap/clion/219/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/219/bin/ninja/linux/ninja -G Ninja -S /home/shvarev/456/libakrypt-0.x-master -B /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug
+-- The C compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test AK_HAVE_WALL
+-- Performing Test AK_HAVE_WALL - Success
+-- Performing Test AK_HAVE_PEDANTIC_ERRORS
+-- Performing Test AK_HAVE_PEDANTIC_ERRORS - Success
+-- Performing Test AK_HAVE_O3
+-- Performing Test AK_HAVE_O3 - Success
+-- Performing Test AK_HAVE_PIPE
+-- Performing Test AK_HAVE_PIPE - Success
+-- Performing Test AK_HAVE_FUNROLL_LOOPS
+-- Performing Test AK_HAVE_FUNROLL_LOOPS - Success
+-- Performing Test AK_HAVE_STDDEF_H
+-- Performing Test AK_HAVE_STDDEF_H - Success
+-- Performing Test AK_HAVE_STDIO_H
+-- Performing Test AK_HAVE_STDIO_H - Success
+-- Performing Test AK_HAVE_STDLIB_H
+-- Performing Test AK_HAVE_STDLIB_H - Success
+-- Performing Test AK_HAVE_STRING_H
+-- Performing Test AK_HAVE_STRING_H - Success
+-- Performing Test AK_HAVE_STRINGS_H
+-- Performing Test AK_HAVE_STRINGS_H - Success
+-- Performing Test AK_HAVE_CTYPE_H
+-- Performing Test AK_HAVE_CTYPE_H - Success
+-- Performing Test AK_HAVE_ENDIAN_H
+-- Performing Test AK_HAVE_ENDIAN_H - Success
+-- Performing Test AK_HAVE_TIME_H
+-- Performing Test AK_HAVE_TIME_H - Success
+-- Performing Test AK_HAVE_SYSTIME_H
+-- Performing Test AK_HAVE_SYSTIME_H - Success
+-- Performing Test AK_HAVE_SYSLOG_H
+-- Performing Test AK_HAVE_SYSLOG_H - Success
+-- Performing Test AK_HAVE_UNISTD_H
+-- Performing Test AK_HAVE_UNISTD_H - Success
+-- Performing Test AK_HAVE_FCNTL_H
+-- Performing Test AK_HAVE_FCNTL_H - Success
+-- Performing Test AK_HAVE_LIMITS_H
+-- Performing Test AK_HAVE_LIMITS_H - Success
+-- Performing Test AK_HAVE_SYSMMAN_H
+-- Performing Test AK_HAVE_SYSMMAN_H - Success
+-- Performing Test AK_HAVE_SYSSTAT_H
+-- Performing Test AK_HAVE_SYSSTAT_H - Success
+-- Performing Test AK_HAVE_SYSTYPES_H
+-- Performing Test AK_HAVE_SYSTYPES_H - Success
+-- Performing Test AK_HAVE_SYSSOCKET_H
+-- Performing Test AK_HAVE_SYSSOCKET_H - Success
+-- Performing Test AK_HAVE_SYSUN_H
+-- Performing Test AK_HAVE_SYSUN_H - Success
+-- Performing Test AK_HAVE_SYSSELECT_H
+-- Performing Test AK_HAVE_SYSSELECT_H - Success
+-- Performing Test AK_HAVE_ERRNO_H
+-- Performing Test AK_HAVE_ERRNO_H - Success
+-- Performing Test AK_HAVE_TERMIOS_H
+-- Performing Test AK_HAVE_TERMIOS_H - Success
+-- Performing Test AK_HAVE_DIRENT_H
+-- Performing Test AK_HAVE_DIRENT_H - Success
+-- Performing Test AK_HAVE_FNMATCH_H
+-- Performing Test AK_HAVE_FNMATCH_H - Success
+-- Performing Test AK_HAVE_STDALIGN_H
+-- Performing Test AK_HAVE_STDALIGN_H - Success
+-- Performing Test AK_HAVE_STDARG_H
+-- Performing Test AK_HAVE_STDARG_H - Success
+-- Performing Test AK_HAVE_WINDOWS_H
+-- Performing Test AK_HAVE_WINDOWS_H - Failed
+-- Performing Test AK_HAVE_GETOPT_H
+-- Performing Test AK_HAVE_GETOPT_H - Success
+-- Performing Test AK_HAVE_LOCALE_H
+-- Performing Test AK_HAVE_LOCALE_H - Success
+-- Performing Test AK_HAVE_SIGNAL_H
+-- Performing Test AK_HAVE_SIGNAL_H - Success
+-- Performing Test AK_HAVE_BYTESWAP_H
+-- Performing Test AK_HAVE_BYTESWAP_H - Success
+-- Performing Test AK_HAVE_BUILTIN_MULQ_GCC
+-- Performing Test AK_HAVE_BUILTIN_MULQ_GCC - Success
+-- Performing Test AK_HAVE_BUILTIN_CLMULEPI64
+-- Performing Test AK_HAVE_BUILTIN_CLMULEPI64 - Failed
+-- Performing Test AK_HAVE_BUILTIN_MM256_SLL
+-- Performing Test AK_HAVE_BUILTIN_MM256_SLL - Failed
+-- Generation of libakrypt-base.h is done
+-- Used compile flags -Wall -pedantic-errors -O3 -pipe -funroll-loops -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_LITTLE_ENDIAN
+-- Path for libakrypt.conf is /etc
+-- Path for ca-certificates is /usr/local/share/ca-certificates/libakrypt
+-- Building libakrypt-base: shared library
+-- Building libakrypt: shared library
+-- Sources for aktool utility:
+      aktool/aktool.c
+      aktool/aktool_asn1.c
+      aktool/aktool_key.c
+      aktool/aktool_show.c
+      aktool/aktool_test.c
+      aktool/aktool_icode.c
+      aktool/aktool_encrypt.c
+-- libintl.h found
+-- gzip found (/usr/bin/gzip)
+-- sphinx-build not found
+-- doxygen not found
+-- latexmk not found
+-- qhelpgenerator not found
+-- Could NOT find Gettext (missing: GETTEXT_MSGMERGE_EXECUTABLE GETTEXT_MSGFMT_EXECUTABLE) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug

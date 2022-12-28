@@ -1,0 +1,253 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libakrypt-base.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 156,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 394,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 143,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 144,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 145,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 152,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-Wall -pedantic-errors -O3 -pipe -funroll-loops -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_LITTLE_ENDIAN -g -fPIC -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DLIBAKRYPT_OPTIONS_PATH=\\\"/etc\\\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DLIBAKRYPT_VERSION=\\\"0.9.10\\\""
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DLIBAKRYPT_COMPILER_NAME=\\\"GNU\\\""
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-DLIBAKRYPT_COMPILER_VERSION=\\\"9.4.0\\\""
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DLIBAKRYPT_CA_PATH=\\\"/usr/local/share/ca-certificates/libakrypt\\\""
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DLIBAKRYPT_LOCALE_PATH=\\\"/usr/share/locale\\\""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "akbase_shared_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/shvarev/456/libakrypt-0.x-master/source"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"id" : "akbase-shared::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "akbase-shared",
+	"nameOnDisk" : "libakrypt-base.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/libakrypt-base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "source/libakrypt.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/ak_tools.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/ak_ini.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/ak_list.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/ak_file.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/ak_base64.c",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

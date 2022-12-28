@@ -1,0 +1,117 @@
+Performing C SOURCE FILE Test AK_HAVE_WINDOWS_H failed with the following output:
+Change Dir: /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/219/bin/ninja/linux/ninja cmTC_8bce5 && [1/2] Building C object CMakeFiles/cmTC_8bce5.dir/src.c.o
+FAILED: CMakeFiles/cmTC_8bce5.dir/src.c.o 
+/usr/bin/cc -DAK_HAVE_WINDOWS_H  -Wall -pedantic-errors -O3 -pipe -funroll-loops  -fdiagnostics-color=always -o CMakeFiles/cmTC_8bce5.dir/src.c.o -c /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: windows.h: Нет такого файла или каталога
+    2 |   #include <windows.h>
+      |            ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+  #include <windows.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_BUILTIN_CLMULEPI64 failed with the following output:
+Change Dir: /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/219/bin/ninja/linux/ninja cmTC_b71fc && [1/2] Building C object CMakeFiles/cmTC_b71fc.dir/src.c.o
+FAILED: CMakeFiles/cmTC_b71fc.dir/src.c.o 
+/usr/bin/cc -DAK_HAVE_BUILTIN_CLMULEPI64  -Wall -pedantic-errors -O3 -pipe -funroll-loops -DAK_HAVE_BUILTIN_MULQ_GCC  -fdiagnostics-color=always -o CMakeFiles/cmTC_b71fc.dir/src.c.o -c /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:18: warning: variable ‘c’ set but not used [-Wunused-but-set-variable]
+    5 |    __m128i a, b, c;
+      |                  ^
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:8: warning: ‘a’ is used uninitialized in this function [-Wuninitialized]
+    6 |    c = _mm_clmulepi64_si128( a, b, 0x00 );
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:8: warning: ‘b’ is used uninitialized in this function [-Wuninitialized]
+In file included from /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/wmmintrin.h:116:1: error: inlining failed in call to always_inline ‘_mm_clmulepi64_si128’: target specific option mismatch
+  116 | _mm_clmulepi64_si128 (__m128i __X, __m128i __Y, const int __I)
+      | ^~~~~~~~~~~~~~~~~~~~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:8: note: called from here
+    6 |    c = _mm_clmulepi64_si128( a, b, 0x00 );
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+  #include <wmmintrin.h>
+  int main( void ) {
+
+   __m128i a, b, c;
+   c = _mm_clmulepi64_si128( a, b, 0x00 );
+
+  return 0;
+ }
+Performing C SOURCE FILE Test AK_HAVE_BUILTIN_MM256_SLL failed with the following output:
+Change Dir: /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/219/bin/ninja/linux/ninja cmTC_795bd && [1/2] Building C object CMakeFiles/cmTC_795bd.dir/src.c.o
+FAILED: CMakeFiles/cmTC_795bd.dir/src.c.o 
+/usr/bin/cc -DAK_HAVE_BUILTIN_MM256_SLL  -Wall -pedantic-errors -O3 -pipe -funroll-loops -DAK_HAVE_BUILTIN_MULQ_GCC  -fdiagnostics-color=always -o CMakeFiles/cmTC_795bd.dir/src.c.o -c /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:12: warning: unused variable ‘m3’ [-Wunused-variable]
+    9 |    __m256i m3 = _mm256_sll_epi64( theta, count );
+      |            ^~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:12: warning: unused variable ‘m2’ [-Wunused-variable]
+    6 |    __m256i m2 = _mm256_srli_epi64( theta, 63 );
+      |            ^~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+    5 |    __m256i theta = _mm256_setr_epi64x( 0x425, 0, 0, 0 );
+      |            ^~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:53,
+                 from /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/avx2intrin.h:703:1: error: inlining failed in call to always_inline ‘_mm256_sll_epi64’: target specific option mismatch
+  703 | _mm256_sll_epi64 (__m256i __A, __m128i __B)
+      | ^~~~~~~~~~~~~~~~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:17: note: called from here
+    9 |    __m256i m3 = _mm256_sll_epi64( theta, count );
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:53,
+                 from /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/avx2intrin.h:787:1: error: inlining failed in call to always_inline ‘_mm256_srli_epi64’: target specific option mismatch
+  787 | _mm256_srli_epi64 (__m256i __A, int __B)
+      | ^~~~~~~~~~~~~~~~~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:17: note: called from here
+    6 |    __m256i m2 = _mm256_srli_epi64( theta, 63 );
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:51,
+                 from /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/avxintrin.h:1403:1: error: inlining failed in call to always_inline ‘_mm256_setr_epi64x’: target specific option mismatch
+ 1403 | _mm256_setr_epi64x (long long __A, long long __B, long long __C,
+      | ^~~~~~~~~~~~~~~~~~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
+    5 |    __m256i theta = _mm256_setr_epi64x( 0x425, 0, 0, 0 );
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:53,
+                 from /home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/avx2intrin.h:703:1: error: inlining failed in call to always_inline ‘_mm256_sll_epi64’: target specific option mismatch
+  703 | _mm256_sll_epi64 (__m256i __A, __m128i __B)
+      | ^~~~~~~~~~~~~~~~
+/home/shvarev/456/libakrypt-0.x-master/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:17: note: called from here
+    9 |    __m256i m3 = _mm256_sll_epi64( theta, count );
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+  #include <immintrin.h>
+  int main( void ) {
+
+   __m256i theta = _mm256_setr_epi64x( 0x425, 0, 0, 0 );
+   __m256i m2 = _mm256_srli_epi64( theta, 63 );
+
+   __m128i count = _mm_setr_epi32( 1, 0, 0, 0 );
+   __m256i m3 = _mm256_sll_epi64( theta, count );
+
+  return 0;
+ }
